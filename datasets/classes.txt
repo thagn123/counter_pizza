@@ -1,5 +1,5 @@
-Dao_cat
-Persons
-Pizza
-Pizza_Box
-Table
+box
+knifes
+person
+pizza
+table
