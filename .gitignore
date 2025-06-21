@@ -1,0 +1,16 @@
+# Bỏ file model nặng
+*.pt
+
+# Bỏ video
+*.mp4
+*.avi
+
+# Bỏ output
+runs/
+frames/
+videos/
+
+# Bỏ file hệ thống
+__pycache__/
+*.pyc
+.DS_Store

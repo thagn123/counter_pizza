@@ -1,0 +1,29 @@
+{
+  "categories": [
+    {
+      "id": 0,
+      "name": "Dao_cat"
+    },
+    {
+      "id": 1,
+      "name": "Persons"
+    },
+    {
+      "id": 2,
+      "name": "Pizza"
+    },
+    {
+      "id": 3,
+      "name": "Pizza_Box"
+    },
+    {
+      "id": 4,
+      "name": "Table"
+    }
+  ],
+  "info": {
+    "year": 2025,
+    "version": "1.0",
+    "contributor": "Label Studio"
+  }
+}
