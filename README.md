@@ -34,7 +34,7 @@ tuy nhiên, trong video sẽ có nhiều bối cảnh khác nhau và việc trai
 
 Hệ thống đếm bánh pizza trong video bằng YOLOv8, được đóng gói hoàn toàn bằng Docker. Bao gồm quy trình từ trích xuất dữ liệu, huấn luyện mô hình đến hiển thị kết quả trực quan.
 
----
+
 
 ## 📁 Cấu trúc dự án
 
@@ -52,9 +52,7 @@ counter_pizza/
 └── README.md
 ```
 
----
-
-## 🚀 Hướng dẫn sử dụng
+##  🚀 Hướng dẫn sử dụng
 
 ### 1. Clone repo
 
