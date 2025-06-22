@@ -29,7 +29,7 @@ tuy nhiên, trong video sẽ có nhiều bối cảnh khác nhau và việc trai
 - Việc đếm này dựa trên giả định rằng: khi pizza được đóng hộp, đơn hàng đã hoàn thiện.
 - Không sử dụng tracking để đơn giản hóa quá trình xử lý video.
 
-```markdown
+
 # 🍕 Counter Pizza – YOLOv8 Video Counting System with Docker
 
 Hệ thống đếm bánh pizza trong video bằng YOLOv8, được đóng gói hoàn toàn bằng Docker. Bao gồm quy trình từ trích xuất dữ liệu, huấn luyện mô hình đến hiển thị kết quả trực quan.
