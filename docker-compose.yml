@@ -1,0 +1,31 @@
+    version: '3.8'
+
+services:
+  extract:
+    build: .
+    container_name: extract_frames
+    volumes:
+      - ./videos:/videos
+      - ./data:/datasets
+    command: python extract_data.py
+
+  train:
+    build: .
+    container_name: train_yolo
+    volumes:
+      - ./data:/datasets
+      - ./weights:/runs/train/pizza_counter_improve/weights
+    command: python train_model.py
+
+  detect:
+    build: .
+    container_name: run_main
+    ports:
+      - "8501:8501"  # nếu giao diện dùng streamlit
+    volumes:
+      - ./videos:/videos
+      - ./weights:/runs/train/pizza_counter_improve/weights
+    command: python main.py
+
+
+ 

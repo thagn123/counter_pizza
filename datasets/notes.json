@@ -2,23 +2,23 @@
   "categories": [
     {
       "id": 0,
-      "name": "Dao_cat"
+      "name": "box"
     },
     {
       "id": 1,
-      "name": "Persons"
+      "name": "knifes"
     },
     {
       "id": 2,
-      "name": "Pizza"
+      "name": "person"
     },
     {
       "id": 3,
-      "name": "Pizza_Box"
+      "name": "pizza"
     },
     {
       "id": 4,
-      "name": "Table"
+      "name": "table"
     }
   ],
   "info": {

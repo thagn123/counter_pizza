@@ -1,0 +1,6 @@
+Python >= 3.8
+torch >= 2.0
+ultralytics==8.0.20
+opencv-python
+numpy
+gdown
