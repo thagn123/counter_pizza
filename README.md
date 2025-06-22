@@ -9,3 +9,20 @@ Sử dụng yoloV9 huấn luyện trên tập dữ liệu cá nhân nhằm nhậ
 
 ##file mydata.yaml:
 phần "path" dán đường dẫn thích hợp của folder datasets, tùy theo vị trí tệp của bạn
+
+Logic đếm số lượng pizza sẽ là: đếm số lượng pizza đã được cho vào hộp và đưa đến tay của khách hàng
+tuy nhiên, trong video sẽ có nhiều bối cảnh khác nhau và việc train mô hình theo dõi đối tượng yêu cầu nhiều tài nghuyên hơn nên chúng ta sẽ chỉ đếm số lượng pizza đã được cho vào hộp ( với thực phẩm như pizza việc cho vào hộp đồng nghĩa đã có hoàn thiện đơn hàng, gần như chắc chắn đơn hàng sẽ được giao đến tay khác hàng)
+
+Logic đếm pizza
+Nguyên tắc:
+- Pizza được tính là hoàn tất khi được cho vào hộp.
+- Tâm của bounding box pizza và box gần nhau → được xem là một lần "cho vào hộp".
+Cụ thể:
+- Xác định tâm của mỗi bounding box.
+- Nếu khoảng cách giữa tâm pizza và box < 80 px → đếm +1.
+- Tránh đếm trùng bằng cách kiểm tra khoảng cách giữa các pizza đã đếm trước đó.
+
+📌 Lưu ý
+- Việc đếm này dựa trên giả định rằng: khi pizza được đóng hộp, đơn hàng đã hoàn thiện.
+- Không sử dụng tracking để đơn giản hóa quá trình xử lý video.
+
